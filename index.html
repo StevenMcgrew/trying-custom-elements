@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>body{visibility:hidden;opacity:0;}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <script src="/index.js" defer></script>
+</head>
+
+<body>
+
+    <template name="ModalBox" class="modal-box">
+        <div class="modal-header">
+            <h3 class="title">TITLE</h3>
+            <button>x</button>
+        </div>
+        <div class="childBox">
+            CONTENTS
+        </div>
+        <div class="modal-btn-box">
+            <button>NO</button>
+            <button>YES</button>
+        </div>
+    </template>
+
+    <template name="Question" class="ques-tion">
+        <div>
+            <h3>Question:</h3>
+            <p class="childBox"></p>
+        </div>
+    </template>
+
+    <modal-box>
+        <ques-tion>
+            Are you having a good day?
+        </ques-tion>
+    </modal-box>
+
+</body>
+
+</html>
