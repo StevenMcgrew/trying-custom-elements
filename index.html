@@ -2,7 +2,12 @@
 <html lang="en">
 
 <head>
-    <style>body{visibility:hidden;opacity:0;}</style>
+    <style>
+        body {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -17,9 +22,7 @@
             <h3 class="title">TITLE</h3>
             <button>x</button>
         </div>
-        <div class="childBox">
-            CONTENTS
-        </div>
+        <slot></slot>
         <div class="modal-btn-box">
             <button>NO</button>
             <button>YES</button>
@@ -29,15 +32,15 @@
     <template name="Question" class="ques-tion">
         <div>
             <h3>Question:</h3>
-            <p class="childBox"></p>
+            <slot></slot>
         </div>
     </template>
 
-    <modal-box>
-        <ques-tion>
-            Are you having a good day?
-        </ques-tion>
-    </modal-box>
+    <Modal-box>
+            <Ques-tion>
+                    Are you having a good day?
+            </Ques-tion>
+    </Modal-box>
 
 </body>
 
