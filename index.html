@@ -17,30 +17,28 @@
 
 <body>
 
-    <template name="ModalBox" class="modal-box">
-        <div class="modal-header">
-            <h3 class="title">TITLE</h3>
-            <button>x</button>
+    <template name="ModalBox" class="modalbox-456-0">
+        <div class="modal-header modalbox-456-1">
+            <h3 class="title modalbox-456-2">TITLE</h3>
+            <button class="modalbox-456-3">x</button>
         </div>
-        <slot></slot>
-        <div class="modal-btn-box">
-            <button>NO</button>
-            <button>YES</button>
-        </div>
-    </template>
-
-    <template name="Question" class="ques-tion">
-        <div>
-            <h3>Question:</h3>
-            <slot></slot>
+        <slot class="modalbox-456-4"></slot>
+        <div class="modal-btn-box modalbox-456-5">
+            <button class="modalbox-456-6">NO</button>
+            <button class="modalbox-456-7">YES</button>
         </div>
     </template>
 
-    <Modal-box>
-            <Ques-tion>
-                    Are you having a good day?
-            </Ques-tion>
-    </Modal-box>
+    <template name="Question" class="question-321-0">
+        <div class="question-321-1">
+            <h3 class="question-321-2">Question:</h3>
+            <p class="question-321-3">{{ text }}</p>
+        </div>
+    </template>
+
+    <modalbox-456>
+            <question-321 Text="Are you having a good day?"/>
+    </modalbox-456>
 
 </body>
 

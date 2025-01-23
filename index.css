@@ -23,23 +23,23 @@ button:active {
     transform: scale(95%);
 }
 
-modal-box {
+modalbox-456 {
     display: block;
     background-color: lightgray;
     border-radius: 5px;
     max-width: 375px;
 }
 
-modal-box .modal-header {
+modalbox-456 .modal-header {
     display: flex;
     justify-content: space-between;
 }
 
-modal-box .title {
+modalbox-456 .title {
     padding-left: 20px;
 }
 
-modal-box .modal-header button {
+modalbox-456 .modal-header button {
     background-color: indianred;
     padding: 8px;
     height: 31px;
@@ -47,13 +47,13 @@ modal-box .modal-header button {
     margin-top: 5px;
 }
 
-modal-box .modal-btn-box {
+modalbox-456 .modal-btn-box {
     display: flex;
     justify-content: space-evenly;
     padding-block: 10px;
 }
 
-ques-tion {
+question-321 {
     display: block;
     background-color: white;
     padding: 20px;
