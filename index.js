@@ -27,7 +27,7 @@ customElements.define("modalbox-456", ModalBox);
 
 class Question extends HTMLElement {
     static get observedAttributes() {
-        return ["text"];
+        return ["q_text"];
     }
     constructor() {
         super();
