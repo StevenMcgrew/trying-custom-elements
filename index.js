@@ -44,7 +44,8 @@ class Question extends HTMLElement {
         if (newValue === oldValue) {
             return
         }
-        this['set'+name](newValue)
+        let key = ('set'+name[0].toUpperCase()+name.substr(1,name.length))
+        this[key](newValue)
     }
 
     setText(newVal) {
@@ -54,23 +55,23 @@ class Question extends HTMLElement {
 customElements.define("question-321", Question);
 
 // EXAMPLE of using attributes and properties "in sync"
-class MyCustomElement extends HTMLElement {
-    static get observedAttributes() {
-      return ['my-attribute'];
-    }
+// class MyCustomElement extends HTMLElement {
+//     static get observedAttributes() {
+//       return ['my-attribute'];
+//     }
   
-    attributeChangedCallback(name, oldValue, newValue) {
-      if (name === 'my-attribute') {
-        this.myProperty = newValue;
-      }
-    }
+//     attributeChangedCallback(name, oldValue, newValue) {
+//       if (name === 'my-attribute') {
+//         this.myProperty = newValue;
+//       }
+//     }
   
-    get myProperty() {
-      return this._myProperty;
-    }
+//     get myProperty() {
+//       return this._myProperty;
+//     }
   
-    set myProperty(value) {
-      this._myProperty = value;
-      this.setAttribute('my-attribute', value);
-    }
-  }
+//     set myProperty(value) {
+//       this._myProperty = value;
+//       this.setAttribute('my-attribute', value);
+//     }
+//   }
